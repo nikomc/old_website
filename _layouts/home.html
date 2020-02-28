@@ -7,11 +7,17 @@ title: Home
 auto; line-height: 1.8em;  text-align: justify; text-justify: inter-word;">
 
 </div>
+
 {% for post in site.posts %}
 
 {% if post.sect  == "home" %}
 
 <article>
+  {% if post.title == 'Photography' %}
+  <a href="{{ site.github.url }}/photography">
+  {% else %}
+  <a href="{{ site.github.url }}{{ post.url }}">
+  {% endif %}
     <div class="featured-posts" {% if post.image %}style="background-image:url({{ site.github.url }}/assets/img/{{ post.image }})"{% endif %}>
       <h2><span>{{ post.title }}</span></h2>
     </div>

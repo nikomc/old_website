@@ -1,6 +1,6 @@
 ---
-layout: page
-title: misc
+layout: misc
+title: Vitae
 ---
 
 <div style="width: 75%; margin: auto">

@@ -12,7 +12,7 @@ menu:
 - {name: 'Interactives', folder: 'pages', file: 'interactives.html'}
 - {name: 'Articles', folder: 'pages', file: 'articles.html'}
 - {name: 'Vitae', folder: 'pages', file: 'vitae.html'}
-- {name: 'Contact', folder: 'pages', file: 'contact.md'}
+- {name: 'Contact', folder: 'pages', file: 'contact.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:

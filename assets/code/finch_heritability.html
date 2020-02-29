@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.4.0.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="89b783c3-7a31-4b9a-9de0-8dac8386b0b2" data-root-id="1002"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1301">
+          {"0a6f5868-4f78-4416-be5e-052b5332b66e":{"roots":{"references":[{"attributes":{"overlay":{"id":"1045","type":"BoxAnnotation"}},"id":"1023","type":"BoxZoomTool"},{"attributes":{},"id":"1022","type":"WheelZoomTool"},{"attributes":{},"id":"1041","type":"BasicTickFormatter"},{"attributes":{"callback":null},"id":"1005","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"x":{"field":"x"},"y":{"field":"y"}},"id":"1036","type":"Circle"},{"attributes":{"axis_label":"offspring beak depth (mm)","formatter":{"id":"1043","type":"BasicTickFormatter"},"ticker":{"id":"1017","type":"BasicTicker"}},"id":"1016","type":"LinearAxis"},{"attributes":{},"id":"1046","type":"UnionRenderers"},{"attributes":{},"id":"1047","type":"Selection"},{"attributes":{"callback":null,"data":{"x":{"__ndarray__":"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","dtype":"float64","shape":[413]},"y":{"__ndarray__":"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","dtype":"float64","shape":[413]}},"selected":{"id":"1047","type":"Selection"},"selection_policy":{"id":"1046","type":"UnionRenderers"}},"id":"1034","type":"ColumnDataSource"},{"attributes":{"callback":null},"id":"1003","type":"DataRange1d"},{"attributes":{},"id":"1009","type":"LinearScale"},{"attributes":{"fill_color":{"value":"#1f77b4"},"line_color":{"value":"#1f77b4"},"x":{"field":"x"},"y":{"field":"y"}},"id":"1035","type":"Circle"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1021","type":"PanTool"},{"id":"1022","type":"WheelZoomTool"},{"id":"1023","type":"BoxZoomTool"},{"id":"1024","type":"SaveTool"},{"id":"1025","type":"ResetTool"},{"id":"1026","type":"HelpTool"}]},"id":"1027","type":"Toolbar"},{"attributes":{"below":[{"id":"1011","type":"LinearAxis"}],"center":[{"id":"1015","type":"Grid"},{"id":"1020","type":"Grid"}],"left":[{"id":"1016","type":"LinearAxis"}],"plot_height":300,"plot_width":450,"renderers":[{"id":"1037","type":"GlyphRenderer"}],"title":{"id":"1039","type":"Title"},"toolbar":{"id":"1027","type":"Toolbar"},"x_range":{"id":"1003","type":"DataRange1d"},"x_scale":{"id":"1007","type":"LinearScale"},"y_range":{"id":"1005","type":"DataRange1d"},"y_scale":{"id":"1009","type":"LinearScale"}},"id":"1002","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"1017","type":"BasicTicker"},{"attributes":{"dimension":1,"ticker":{"id":"1017","type":"BasicTicker"}},"id":"1020","type":"Grid"},{"attributes":{"source":{"id":"1034","type":"ColumnDataSource"}},"id":"1038","type":"CDSView"},{"attributes":{"data_source":{"id":"1034","type":"ColumnDataSource"},"glyph":{"id":"1035","type":"Circle"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1036","type":"Circle"},"selection_glyph":null,"view":{"id":"1038","type":"CDSView"}},"id":"1037","type":"GlyphRenderer"},{"attributes":{},"id":"1012","type":"BasicTicker"},{"attributes":{},"id":"1025","type":"ResetTool"},{"attributes":{},"id":"1026","type":"HelpTool"},{"attributes":{"ticker":{"id":"1012","type":"BasicTicker"}},"id":"1015","type":"Grid"},{"attributes":{},"id":"1043","type":"BasicTickFormatter"},{"attributes":{},"id":"1024","type":"SaveTool"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"1045","type":"BoxAnnotation"},{"attributes":{"text":""},"id":"1039","type":"Title"},{"attributes":{"axis_label":"parental beak depth(mm)","formatter":{"id":"1041","type":"BasicTickFormatter"},"ticker":{"id":"1012","type":"BasicTicker"}},"id":"1011","type":"LinearAxis"},{"attributes":{},"id":"1021","type":"PanTool"},{"attributes":{},"id":"1007","type":"LinearScale"}],"root_ids":["1002"]},"title":"Bokeh Application","version":"1.4.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1301').textContent;
+                  var render_items = [{"docid":"0a6f5868-4f78-4416-be5e-052b5332b66e","roots":{"1002":"89b783c3-7a31-4b9a-9de0-8dac8386b0b2"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

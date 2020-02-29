@@ -5,7 +5,7 @@ title: Vitae
 
 <div style="width: 75%; margin: auto">
 
-## Education
+**Education**
 
 **B.Sc. Biochemistry** - with certificate in Clinical & Translational Science (Honors, University Honors, High Distinction), University of Iowa, *2017*<br/>
 **MRes Systems and Synthetic Biology** - Imperial College London, *2018*<br/>

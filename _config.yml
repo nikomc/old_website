@@ -14,7 +14,7 @@ sass:
   style: :nested
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           "niko mccarty"
+title:		           "N.S. McCarty"
 # description:	       "a Jekyll theme for running a blog or publication"
 author:              "hiniko.io"
 

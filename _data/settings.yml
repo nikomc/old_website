@@ -9,10 +9,10 @@ google-ID: 'UA-77949830-2'
 menu:
 - {name: 'Bio', folder: 'pages', file: 'bio.html'}
 - {name: 'Blog', folder: 'pages', file: 'blog.html'}
-- {name: 'Vitae', folder: 'pages', file: 'vitae.html'}
-- {name: 'Articles', folder: 'pages', file: 'articles.html'}
 - {name: 'Interactives', folder: 'pages', file: 'interactives.html'}
-- {name: 'Contact', folder: 'pages', file: 'contact.html'}
+- {name: 'Articles', folder: 'pages', file: 'articles.html'}
+- {name: 'Vitae', folder: 'pages', file: 'vitae.html'}
+- {name: 'Contact', folder: 'pages', file: 'contact.md'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:

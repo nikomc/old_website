@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Test Interactive"
+title: "Exploring Genes and Genomes"
 author: "Niko McCarty"
 categories: interactives
-tags: [interactives,sample]
-image: cuba-4.jpg
+tags: [interactives]
+image: cuba-1.jpg
 sect: home
 display_img: false
 ---
@@ -17,5 +17,4 @@ https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0006978#abstra
 Distinct Gene Number-Genome Size Relationships for Eukaryotes and Non-Eukaryotes: Gene Content Estimation for Dinoflagellate Genomes
 Yubo Hou,Senjie Lin 
 PLoS One (2009)
-
 

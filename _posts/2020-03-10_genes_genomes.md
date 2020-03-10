@@ -4,7 +4,7 @@ title: "Exploring Genes and Genomes"
 author: "Niko McCarty"
 categories: interactives
 tags: [interactives]
-image: genes_genomes.png
+image: cuba-1.jpg
 sect: home
 display_img: false
 ---

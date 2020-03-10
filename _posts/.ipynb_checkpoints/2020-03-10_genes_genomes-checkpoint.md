@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Exploring Genes and Genomes"
+title: "Test Interactive"
 author: "Niko McCarty"
 categories: interactives
-tags: [interactives, sample]
-image: city-1.jpg
+tags: [interactives,sample]
+image: cuba-4.jpg
 sect: home
-# display_img: false
+display_img: false
 ---
 
-{% include 2020-03-10_genes_genomes_interactive.html %}
+{% include genes_genomes_interactive.html %}
 
 While writing an article for [Caltech Letters]()
 https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0006978#abstract0

@@ -4,9 +4,9 @@ title: "Exploring Genes and Genomes"
 author: "Niko McCarty"
 categories: interactives
 tags: [interactives, sample]
-image: 2020-03-10_genes_genomes.png
+image: city-1.jpg
 sect: home
-display_img: false
+# display_img: false
 ---
 
 {% include 2020-03-10_genes_genomes_interactive.html %}

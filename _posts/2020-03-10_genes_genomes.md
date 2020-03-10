@@ -4,13 +4,13 @@ title: "Exploring Genes and Genomes"
 author: "Niko McCarty"
 categories: interactives
 tags: [interactives]
-image: cuba-1.jpg
+image: 2020-03-10_genes_genomes.png
 # sect: home
 display_img: false
 ---
 
-{% include finch_heritability.html %}
+{% include 2020-03-10_genes_genomes_interactive.html %}
 
-Millennial is a minimalist Jekyll theme. The purpose of this theme is to provide a simple, clean, content-focused blogging platform for your personal site or blog. Below you can find everything you need to get started.
+While writing an article for [Caltech Letters]()
 
 

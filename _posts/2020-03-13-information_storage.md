@@ -6,10 +6,8 @@ categories: blog
 tags: [blog,coronavirus,covid-19,virus,viruses,information,storage,density,data]
 image: covid-19.jpg
 sect: home
-display_img: false
----
 
-## Information Storage Capacity of Viruses
+---
 
 {% include 2020_03_05_areal_density.html %}
 

@@ -11,7 +11,13 @@ display_img: false
 
 ## Information Storage Capacity of Viruses
 
-{% include 2020_03_05_viral_storage_density.html %}
+{% include 2020_03_05_areal_density.html %}
+
+{% include 2020_03_05_viral_storage_capacity.html %}
+
+{% include 2020_03_05_viruses_library.html %}
+
+
 
 TEXT
 

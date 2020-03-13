@@ -13,4 +13,8 @@ display_img: false
 
 {% include 2020_03_05_viral_storage_density.html %}
 
-{% include 2020-03-05_areal_density.html %}
+TExt here.
+
+{% include 2020_03_05_areal_density.html %}
+
+"Interact with these graphs by zooming in, out. Hover over points to see more information."

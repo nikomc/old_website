@@ -1,0 +1,34 @@
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.0.2"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": {"type": "circle", "size": 100}, "encoding": {"color": {"condition": {"type": "quantitative", "field": "Genome Size (Bases)", "selection": "selector021"}, "value": "lightgray"}, "x": {"type": "quantitative", "axis": {"title": "Volume of Virus (cubic nanometers)"}, "field": "volume nm^3"}, "y": {"type": "quantitative", "axis": {"title": "Information Capacity (kilobytes)"}, "field": "kilobytes"}}, "selection": {"selector021": {"type": "single", "on": "mouseover", "nearest": true, "empty": "none"}}}, {"mark": {"type": "text", "align": "left", "dx": 10}, "encoding": {"opacity": {"condition": {"value": 1.0, "selection": "selector021"}, "value": 0.0}, "text": {"type": "nominal", "field": "Virus"}, "x": {"type": "quantitative", "field": "volume nm^3"}, "y": {"type": "quantitative", "field": "kilobytes"}}}], "data": {"name": "data-8abaa60d312f9161906bb36d9e86f8c4"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.0.2.json", "datasets": {"data-8abaa60d312f9161906bb36d9e86f8c4": [{"Virus": "cowpea mosaic virus (CPMV)", "diameter (nm)": 28, "Genome Size (Bases)": 9400, "Genome Type": "2 ssRNA molecules", "volume nm^3": 11494.040321933857, "bits": 18800, "kilobytes": 2.35, "volume micron^3": 1.1494040321933857e-05, "kb per cubic micron": 204453.78075762794, "viruses_for_library": 85106382978.7234, "virus_volume_library_cubic_micron": 978216.197611392}, {"Virus": "cowpea chlorotic mottle virus (CCMV)", "diameter (nm)": 28, "Genome Size (Bases)": 7900, "Genome Type": "3 ssRNA molecules", "volume nm^3": 11494.040321933857, "bits": 15800, "kilobytes": 1.975, "volume micron^3": 1.1494040321933857e-05, "kb per cubic micron": 171828.17744524052, "viruses_for_library": 101265822784.81012, "virus_volume_library_cubic_micron": 1163953.4503224157}, {"Virus": "phi X 174", "diameter (nm)": 32, "Genome Size (Bases)": 5400, "Genome Type": "ssDNA", "volume nm^3": 17157.284678805056, "bits": 10800, "kilobytes": 1.35, "volume micron^3": 1.7157284678805057e-05, "kb per cubic micron": 78683.7792385469, "viruses_for_library": 148148148148.14813, "virus_volume_library_cubic_micron": 2541819.952415564}, {"Virus": "polio virus", "diameter (nm)": 30, "Genome Size (Bases)": 7500, "Genome Type": "ssRNA", "volume nm^3": 14137.166941154068, "bits": 15000, "kilobytes": 1.875, "volume micron^3": 1.4137166941154069e-05, "kb per cubic micron": 132629.11924324612, "viruses_for_library": 106666666666.66667, "virus_volume_library_cubic_micron": 1507964.4737231007}, {"Virus": "lambda phage", "diameter (nm)": 58, "Genome Size (Bases)": 49000, "Genome Type": "dsDNA", "volume nm^3": 102160.40430453527, "bits": 98000, "kilobytes": 12.25, "volume micron^3": 0.00010216040430453527, "kb per cubic micron": 119909.47063485906, "viruses_for_library": 16326530612.244898, "virus_volume_library_cubic_micron": 1667924.9682373104}, {"Virus": "T7 bacteriophage", "diameter (nm)": 58, "Genome Size (Bases)": 40000, "Genome Type": "dsDNA", "volume nm^3": 102160.40430453527, "bits": 80000, "kilobytes": 10.0, "volume micron^3": 0.00010216040430453527, "kb per cubic micron": 97885.28215090535, "viruses_for_library": 20000000000.0, "virus_volume_library_cubic_micron": 2043208.0860907054}, {"Virus": "adenovirus (linear DNA)", "diameter (nm)": 100, "Genome Size (Bases)": 36000, "Genome Type": "dsDNA", "volume nm^3": 523598.7755982988, "bits": 72000, "kilobytes": 9.0, "volume micron^3": 0.0005235987755982988, "kb per cubic micron": 17188.7338539247, "viruses_for_library": 22222222222.22222, "virus_volume_library_cubic_micron": 11635528.346628862}, {"Virus": "influenza A", "diameter (nm)": 100, "Genome Size (Bases)": 14000, "Genome Type": "ssRNA", "volume nm^3": 523598.7755982988, "bits": 28000, "kilobytes": 3.5, "volume micron^3": 0.0005235987755982988, "kb per cubic micron": 6684.507609859605, "viruses_for_library": 57142857142.85714, "virus_volume_library_cubic_micron": 29919930.034188505}, {"Virus": "HIV-1", "diameter (nm)": 135, "Genome Size (Bases)": 9700, "Genome Type": "ssRNA", "volume nm^3": 1288249.3375126645, "bits": 19400, "kilobytes": 2.425, "volume micron^3": 0.0012882493375126645, "kb per cubic micron": 1882.3995707866297, "viruses_for_library": 82474226804.12372, "virus_volume_library_cubic_micron": 106247368.04228161}, {"Virus": "herpes simplex virus 1", "diameter (nm)": 125, "Genome Size (Bases)": 153000, "Genome Type": "dsDNA", "volume nm^3": 1022653.8585904274, "bits": 306000, "kilobytes": 38.25, "volume micron^3": 0.0010226538585904274, "kb per cubic micron": 37402.684866140145, "viruses_for_library": 5228758169.934641, "virus_volume_library_cubic_micron": 5347209.718119881}, {"Virus": "Epstein-Barr virus (EBV)", "diameter (nm)": 140, "Genome Size (Bases)": 170000, "Genome Type": "dsDNA", "volume nm^3": 1436755.0402417318, "bits": 340000, "kilobytes": 42.5, "volume micron^3": 0.0014367550402417319, "kb per cubic micron": 29580.54700323128, "viruses_for_library": 4705882352.941176, "virus_volume_library_cubic_micron": 6761200.189372856}, {"Virus": "2019-nCov", "diameter (nm)": 60, "Genome Size (Bases)": 29844, "Genome Type": "ssRNA", "volume nm^3": 113097.33552923254, "bits": 59688, "kilobytes": 7.461, "volume micron^3": 0.00011309733552923255, "kb per cubic micron": 65969.72391159063, "viruses_for_library": 26806058169.146225, "virus_volume_library_cubic_micron": 3031693.7549720556}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

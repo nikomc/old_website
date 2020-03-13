@@ -4,7 +4,7 @@ title: "Test Blog"
 author: "Niko McCarty"
 # categories: blog
 tags: [blog,sample]
-image: cuba-1.jpg
+image: cuba-4.jpg
 # sect: home
 display_img: false
 ---

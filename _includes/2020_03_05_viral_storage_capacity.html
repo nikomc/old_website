@@ -1,36 +1,85 @@
+
+
+
+
 <!DOCTYPE html>
-<html>
-<head>
-  <style>
-    .error {
-        color: red;
-    }
-  </style>
-  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
-  <!-- Import vega-embed -->
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@4"></script>
-</head>
-<body>
-  <div id="vis"></div>
-  <script>
-    (function(vegaEmbed) {
-      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": {"type": "circle", "size": 100}, "encoding": {"color": {"condition": {"type": "quantitative", "field": "Genome Size (Bases)", "selection": "selector046"}, "value": "lightgray"}, "x": {"type": "quantitative", "axis": {"title": "Volume of Virus (cubic nanometers)"}, "field": "volume nm^3"}, "y": {"type": "quantitative", "axis": {"title": "Information Capacity (kilobytes)"}, "field": "kilobytes"}}, "selection": {"selector046": {"type": "single", "on": "mouseover", "nearest": true, "empty": "none"}}}, {"mark": {"type": "text", "align": "left", "dx": 10}, "encoding": {"opacity": {"condition": {"value": 1.0, "selection": "selector046"}, "value": 0.0}, "text": {"type": "nominal", "field": "Virus"}, "x": {"type": "quantitative", "field": "volume nm^3"}, "y": {"type": "quantitative", "field": "kilobytes"}}}], "data": {"name": "data-7723095ef0299a6caed1a2c28b9ec8f8"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.0.2.json", "datasets": {"data-7723095ef0299a6caed1a2c28b9ec8f8": [{"Virus": "cowpea mosaic virus (CPMV)", "diameter (nm)": 28, "Genome Size (Bases)": 9400, "Genome Type": "2 ssRNA molecules", "volume nm^3": 11494.040321933857, "bits": 18800, "kilobytes": 2.35, "volume micron^3": 1.1494040321933857e-05, "kb per cubic micron": 204453.78075762794}, {"Virus": "cowpea chlorotic mottle virus (CCMV)", "diameter (nm)": 28, "Genome Size (Bases)": 7900, "Genome Type": "3 ssRNA molecules", "volume nm^3": 11494.040321933857, "bits": 15800, "kilobytes": 1.975, "volume micron^3": 1.1494040321933857e-05, "kb per cubic micron": 171828.17744524052}, {"Virus": "phi X 174", "diameter (nm)": 32, "Genome Size (Bases)": 5400, "Genome Type": "ssDNA", "volume nm^3": 17157.284678805056, "bits": 10800, "kilobytes": 1.35, "volume micron^3": 1.7157284678805057e-05, "kb per cubic micron": 78683.7792385469}, {"Virus": "polio virus", "diameter (nm)": 30, "Genome Size (Bases)": 7500, "Genome Type": "ssRNA", "volume nm^3": 14137.166941154068, "bits": 15000, "kilobytes": 1.875, "volume micron^3": 1.4137166941154069e-05, "kb per cubic micron": 132629.11924324612}, {"Virus": "lambda phage", "diameter (nm)": 58, "Genome Size (Bases)": 49000, "Genome Type": "dsDNA", "volume nm^3": 102160.40430453527, "bits": 98000, "kilobytes": 12.25, "volume micron^3": 0.00010216040430453527, "kb per cubic micron": 119909.47063485906}, {"Virus": "T7 bacteriophage", "diameter (nm)": 58, "Genome Size (Bases)": 40000, "Genome Type": "dsDNA", "volume nm^3": 102160.40430453527, "bits": 80000, "kilobytes": 10.0, "volume micron^3": 0.00010216040430453527, "kb per cubic micron": 97885.28215090535}, {"Virus": "adenovirus (linear DNA)", "diameter (nm)": 100, "Genome Size (Bases)": 36000, "Genome Type": "dsDNA", "volume nm^3": 523598.7755982988, "bits": 72000, "kilobytes": 9.0, "volume micron^3": 0.0005235987755982988, "kb per cubic micron": 17188.7338539247}, {"Virus": "influenza A", "diameter (nm)": 100, "Genome Size (Bases)": 14000, "Genome Type": "ssRNA", "volume nm^3": 523598.7755982988, "bits": 28000, "kilobytes": 3.5, "volume micron^3": 0.0005235987755982988, "kb per cubic micron": 6684.507609859605}, {"Virus": "HIV-1", "diameter (nm)": 135, "Genome Size (Bases)": 9700, "Genome Type": "ssRNA", "volume nm^3": 1288249.3375126645, "bits": 19400, "kilobytes": 2.425, "volume micron^3": 0.0012882493375126645, "kb per cubic micron": 1882.3995707866297}, {"Virus": "herpes simplex virus 1", "diameter (nm)": 125, "Genome Size (Bases)": 153000, "Genome Type": "dsDNA", "volume nm^3": 1022653.8585904274, "bits": 306000, "kilobytes": 38.25, "volume micron^3": 0.0010226538585904274, "kb per cubic micron": 37402.684866140145}, {"Virus": "Epstein-Barr virus (EBV)", "diameter (nm)": 140, "Genome Size (Bases)": 170000, "Genome Type": "dsDNA", "volume nm^3": 1436755.0402417318, "bits": 340000, "kilobytes": 42.5, "volume micron^3": 0.0014367550402417319, "kb per cubic micron": 29580.54700323128}, {"Virus": "2019-nCov", "diameter (nm)": 60, "Genome Size (Bases)": 29844, "Genome Type": "ssRNA", "volume nm^3": 113097.33552923254, "bits": 59688, "kilobytes": 7.461, "volume micron^3": 0.00011309733552923255, "kb per cubic micron": 65969.72391159063}]}};
-      var embedOpt = {"mode": "vega-lite"};
-
-      function showError(el, error){
-          el.innerHTML = ('<div class="error" style="color:red;">'
-                          + '<p>JavaScript Error: ' + error.message + '</p>'
-                          + "<p>This usually means there's a typo in your chart specification. "
-                          + "See the javascript console for the full traceback.</p>"
-                          + '</div>');
-          throw error;
-      }
-      const el = document.getElementById('vis');
-      vegaEmbed("#vis", spec, embedOpt)
-        .catch(error => showError(el, error));
-    })(vegaEmbed);
-
-  </script>
-</body>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.4.0.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="f0f9ab4b-205f-4fc9-829a-cb6eeaffd2a3" data-root-id="2029"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="2177">
+          {"d4557dd6-2c58-4928-baea-0ca44825164f":{"roots":{"references":[{"attributes":{},"id":"2072","type":"BasicTickFormatter"},{"attributes":{"ticker":{"id":"2039","type":"BasicTicker"}},"id":"2042","type":"Grid"},{"attributes":{},"id":"2074","type":"BasicTickFormatter"},{"attributes":{"callback":null},"id":"2032","type":"DataRange1d"},{"attributes":{"dimension":1,"ticker":{"id":"2044","type":"BasicTicker"}},"id":"2047","type":"Grid"},{"attributes":{},"id":"2036","type":"LinearScale"},{"attributes":{"callback":null,"data":{"Genome Size (Bases)":[9400,7900,5400,7500,49000,40000,36000,14000,9700,153000,170000,29844],"Genome Type":["2 ssRNA molecules","3 ssRNA molecules","ssDNA","ssRNA","dsDNA","dsDNA","dsDNA","ssRNA","ssRNA","dsDNA","dsDNA","ssRNA"],"Virus":["cowpea mosaic virus (CPMV)","cowpea chlorotic mottle virus (CCMV)","phi X 174","polio virus","lambda phage","T7 bacteriophage","adenovirus (linear DNA)","influenza A","HIV-1","herpes simplex virus 1","Epstein-Barr virus (EBV)","2019-nCov"],"bits":[18800,15800,10800,15000,98000,80000,72000,28000,19400,306000,340000,59688],"diameter (nm)":[28,28,32,30,58,58,100,100,135,125,140,60],"index":[1,2,3,4,5,6,7,8,9,10,11,13],"kb per cubic micron":{"__ndarray__":"8dr9Pi71CEEHaWhrofkEQavWwne8NfNAk8019KgwAEEAa7iHV0b9QPCqsIPU5fdAqHN29y7J0EAhQrjygRy6QAyUFSmZaZ1AQmVs6lVD4kBK1xkCI+PcQO9RJJUbG/BA","dtype":"float64","shape":[12]},"kilobytes":{"__ndarray__":"zczMzMzMAkCamZmZmZn/P5qZmZmZmfU/AAAAAAAA/j8AAAAAAIAoQAAAAAAAACRAAAAAAAAAIkAAAAAAAAAMQGZmZmZmZgNAAAAAAAAgQ0AAAAAAAEBFQPLSTWIQ2B1A","dtype":"float64","shape":[12]},"virus_volume_library_cubic_micron":{"__ndarray__":"BFItZVDaLUFwVEhzscIxQdLA6Pl9ZENByepFeXwCN0F/Zt73VHM5QVwKChZILT9BaZUXC2kxZkE/CYygq4h8Qd9LKyDTVJlBF631beJlVEFUrx4MvMpZQaDsouBGIUdB","dtype":"float64","shape":[12]},"viruses_for_library":{"__ndarray__":"MbmCWLzQM0Jkz0DU6ZM3QvYS2qsoP0FCq6qqKtTVOEKN9aGxGGkOQgAAACBfoBJCjuM4zjCyFELbtm2b9ZsqQqwfdNTYMzNCSvSeSYh680EPDw8P4YfxQbyV5PIP9xhC","dtype":"float64","shape":[12]},"volume micron^3":{"__ndarray__":"gK9939Aa6D6Ar33f0BroPu4nFqCf/fE+DYPwbdWl7T4ne7lh3scaPyd7uWHexxo/LKEHz0MoQT8soQfPQyhBP0x5hDFPG1U/ZXMtOFLBUD9ivUD6L4pXPw2D8G3VpR0/","dtype":"float64","shape":[12]},"volume nm^3":{"__ndarray__":"neVEKQVzxkCd5UQpBXPGQGVzLThSwdBAiuZTXpWcy0BKCAh4BvH4QEoICHgG8fhAwXA2Gjv1H0HBcDYaO/UfQeA6Z1Y5qDNBHSqZt3s1L0E6SE0KU+w1QYrmU16VnPtA","dtype":"float64","shape":[12]}},"selected":{"id":"2076","type":"Selection"},"selection_policy":{"id":"2077","type":"UnionRenderers"}},"id":"2063","type":"ColumnDataSource"},{"attributes":{},"id":"2052","type":"ResetTool"},{"attributes":{"data_source":{"id":"2063","type":"ColumnDataSource"},"glyph":{"id":"2065","type":"Circle"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2066","type":"Circle"},"selection_glyph":null,"view":{"id":"2068","type":"CDSView"}},"id":"2067","type":"GlyphRenderer"},{"attributes":{},"id":"2034","type":"LinearScale"},{"attributes":{},"id":"2039","type":"BasicTicker"},{"attributes":{},"id":"2044","type":"BasicTicker"},{"attributes":{"overlay":{"id":"2075","type":"BoxAnnotation"}},"id":"2050","type":"BoxZoomTool"},{"attributes":{"source":{"id":"2063","type":"ColumnDataSource"}},"id":"2068","type":"CDSView"},{"attributes":{},"id":"2077","type":"UnionRenderers"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"2075","type":"BoxAnnotation"},{"attributes":{"axis_label":"Volume of Virus (cubic nanometers)","formatter":{"id":"2074","type":"BasicTickFormatter"},"ticker":{"id":"2039","type":"BasicTicker"}},"id":"2038","type":"LinearAxis"},{"attributes":{"axis_label":"Information Capacity (kilobytes)","formatter":{"id":"2072","type":"BasicTickFormatter"},"ticker":{"id":"2044","type":"BasicTicker"}},"id":"2043","type":"LinearAxis"},{"attributes":{"callback":null,"tooltips":[["Name","@Virus"],["Genome Size","@{Genome Size (Bases)}"]]},"id":"2054","type":"HoverTool"},{"attributes":{"callback":null},"id":"2030","type":"DataRange1d"},{"attributes":{"fill_color":{"value":"#1f77b4"},"line_color":{"value":"#1f77b4"},"size":{"units":"screen","value":6},"x":{"field":"volume nm^3"},"y":{"field":"kilobytes"}},"id":"2065","type":"Circle"},{"attributes":{},"id":"2076","type":"Selection"},{"attributes":{},"id":"2049","type":"WheelZoomTool"},{"attributes":{},"id":"2053","type":"HelpTool"},{"attributes":{"text":""},"id":"2070","type":"Title"},{"attributes":{"below":[{"id":"2038","type":"LinearAxis"}],"center":[{"id":"2042","type":"Grid"},{"id":"2047","type":"Grid"}],"left":[{"id":"2043","type":"LinearAxis"}],"plot_height":300,"renderers":[{"id":"2067","type":"GlyphRenderer"}],"title":{"id":"2070","type":"Title"},"toolbar":{"id":"2055","type":"Toolbar"},"x_range":{"id":"2030","type":"DataRange1d"},"x_scale":{"id":"2034","type":"LinearScale"},"y_range":{"id":"2032","type":"DataRange1d"},"y_scale":{"id":"2036","type":"LinearScale"}},"id":"2029","subtype":"Figure","type":"Plot"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"size":{"units":"screen","value":6},"x":{"field":"volume nm^3"},"y":{"field":"kilobytes"}},"id":"2066","type":"Circle"},{"attributes":{},"id":"2048","type":"PanTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"2048","type":"PanTool"},{"id":"2049","type":"WheelZoomTool"},{"id":"2050","type":"BoxZoomTool"},{"id":"2051","type":"SaveTool"},{"id":"2052","type":"ResetTool"},{"id":"2053","type":"HelpTool"},{"id":"2054","type":"HoverTool"}]},"id":"2055","type":"Toolbar"},{"attributes":{},"id":"2051","type":"SaveTool"}],"root_ids":["2029"]},"title":"Bokeh Application","version":"1.4.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('2177').textContent;
+                  var render_items = [{"docid":"d4557dd6-2c58-4928-baea-0ca44825164f","roots":{"2029":"f0f9ab4b-205f-4fc9-829a-cb6eeaffd2a3"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
 </html>

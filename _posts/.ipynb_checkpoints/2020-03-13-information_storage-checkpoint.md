@@ -13,7 +13,7 @@ sect: home
 
 text1
 
-{% include 2020_03_05_viruses_library.html %}
+{% include 2020_03_05_virus_library.html %}
 
 text2
 

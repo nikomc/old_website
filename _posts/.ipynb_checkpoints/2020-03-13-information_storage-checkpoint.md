@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Future of Information Storage is...Viruses?"
+title: "How Many Viruses to Store the Library of Congress?"
 author: "Niko McCarty"
 categories: blog
 tags: [blog,coronavirus,covid-19,virus,viruses,information,storage,density,data]

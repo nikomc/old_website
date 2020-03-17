@@ -20,13 +20,9 @@ $V_{sphere} = \frac{4}{3} \pi r^3$
 
 ![Bacteriophage, Adenovirus, and Retrovisur](../assets/img/viruses_wikimedia.png){:class="img-responsive"}
 
-In a class at Caltech, taught by Professor Rob Phillips (BE/APh 161, Physical Biology of the Cell, for those curious readers), we were asked to think about the viral storage capacity. In other words, how much information, in bits, can different viruses store in their capsids? How does this value, of bits/$\mu m^3$, compare to, say, the bits/$\mu m^3$ value of a modern 4TB hard drive?
+_Different viruses store their "genome" within an icosahedron, such as that seen for the bacteriophage (left) or store their genome within a roughly spherical "shell". Either way, I approximate all of these viral containers as spheres. [Image from Wikimedia, CNX OpenStax](https://commons.wikimedia.org/wiki/File:Figure_21_01_03.png)_
 
-The data for this problem will come from _Cell Biology by the Numbers_ http://book.bionumbers.org/how-big-are-viruses/. These values of sizes, both of viral capsids and the genome within, are first input to a DataFrame.
 
-Let us assume that all of these viruses are semi-spherical, and that the column 'Size (nm)' is given as the diameter. We can then compute the volume of each virus according to:
-
-$\frac{4}{3} \pi r^{3}$
 
 Next, we want to compute the "bits" stored by each virus. There are four bases in DNA and RNA...A, T, G, C (or A, U, G, C if RNA).
 

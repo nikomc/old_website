@@ -9,7 +9,7 @@ sect: home
 mathjax: true
 
 ---
-The coronavirus outbreak has been a trying time. I'm obviously not an epidemiologist, or a virologist, or any other profession that anyone should turn to for advice in the weeks to come. I don't have insights to offer, or words of wisdom to follow. I'm just a scientist that is interested in viruses -- especially their remarkable ability to pack a _huge_ punch in a tiny little capsule, a feature that we are observing in real time.
+The coronavirus outbreak has been a trying time. I'm obviously not an epidemiologist, or a virologist, or any other profession that anyone should turn to for advice in the weeks to come. I don't have insights or words of wisdom to offer, except "Listen to the experts". I'm just a scientist that is interested in viruses -- especially their remarkable ability to pack a _huge_ punch in a tiny little capsule, a feature that we are all observing in real time.
 
 This winter, I was enrolled in a class at Caltech called _Physical Biology of the Cell_. One of our homework problems asked us to consider the information storage capacity of different viruses, a topic that I've decided to expand upon in this inaugural blog post. While I have heard about DNA storage for a long time, it is only through exploring the data directly that I came to appreciate the massive theoretical information storage density that is possible with DNA.
 

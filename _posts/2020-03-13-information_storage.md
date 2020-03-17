@@ -42,9 +42,19 @@ This data, in itself, is not super interesting. Some of the viruses have a highe
 
 **What volume of viruses would be required to store all 25 million books in the Library of Congress?**
 
+That's quite a question, and it warrants some analysis. How much information is actually stored in the Library of Congress? I have seen blog posts from the [Library of Congress](https://blogs.loc.gov/thesignal/2011/07/transferring-libraries-of-congress-of-data/) that refute the strangely circulated claim that the Library of Congress holds a mere 10TB of data (I'm not sure where that figure originated). If the Library of Congress holds 25 million books, and one assumes that each _scanned_ book contains about 8 megabytes of data, then there should be approximately 200 million megabytes, or about 200 terabytes, of information in the Library of Congress. 200 TB is 2e+11 kilobytes of data.
+
+To calculate the number of viruses needed to store that vast amount of information, simply divide 200 terabytes by the information storage capacity of different viruses. To compute the volume of viruses needed to store 200 terabytes, we can use our previous calculations, using the information storage capacities of different viruses in terms of their volume ($\mu m^3$).
+
+My calculations for this second question are shown in the figure below which, again, is interactive.
+
+{% include 2020_03_05_virus_library.html %}
+
+
+
 Obviously, a major limitation with DNA storage is not in how information is stored (DNA is super stable) but, rather, in how the data is retrieved.
 
-Now, how many viruses do we need to store the entire Library of Congress? I have seen blog posts, from the [Library of Congress](https://blogs.loc.gov/thesignal/2011/07/transferring-libraries-of-congress-of-data/), no less, that repute the strangely circulated claim that the LoC holds a mere 10TB of data. In reality, the LoC holds something like 25 million books. Each book, when scanned, contains about 8Mb of data. Thus, there are roughly 200 million Mb of data in the Library of Congress, or about _200 terabytes_. 200 TB is 2e+11 kilobytes of data.
+Now, how many viruses do we need to store the entire Library of Congress? 
 
 Now, the logical question is: What size volume of viruses do we need to store the entire Library of Congress? The calculation is simple...
 
@@ -56,7 +66,7 @@ To compute the areal density of DNA from the Columbia study, I simply converted 
 
 
 
-{% include 2020_03_05_virus_library.html %}
+
 
 
 

@@ -18,17 +18,21 @@ Fortunately, tackling this problem is not too difficult, because much of the dat
 
 $V_{sphere} = \frac{4}{3} \pi r^3$
 
-![Bacteriophage, Adenovirus, and Retrovisur](../assets/img/viruses_wikimedia.png){:class="img-responsive"}
+and using the diameters provided in _Cell Biology by the Numbers_ to calculate each viral volume.
+
+![Bacteriophage, Adenovirus, and Retrovirus](../assets/img/viruses_wikimedia.png){:class="img-responsive"}
 
 _Different viruses store their "genome" within an icosahedron, such as that seen for the bacteriophage (left) or store their genome within a roughly spherical "shell". Either way, I approximate all of these viral containers as spheres. [Image from Wikimedia, CNX OpenStax](https://commons.wikimedia.org/wiki/File:Figure_21_01_03.png)_
 
+To calculate "bits per volume", we also need to know how much information each virus can store. DNA consists of four bases -- adenine, cytosine, guanine and thymine -- and each base can encode two bits of information. For example, A could encode 00, T encodes 11, C encodes 01, and G encodes 10. So to calculate the bits per virus, we simply take its genome size and multiply by two.
 
+![DNA Structure](../assets/img/DNA_structure.png){:class="img-responsive"}
+_DNA is a polymer consisting of four different molecules (or bases): adenine, thymine, cytosine and guanine. These four molecules link and bind to one another, and each base can encode two bits of information. [Image by Madeleine Price Ball](https://commons.wikimedia.org/wiki/File:DNA_chemical_structure.svg)_
 
-Next, we want to compute the "bits" stored by each virus. There are four bases in DNA and RNA...A, T, G, C (or A, U, G, C if RNA).
+I used a Pandas DataFrame to store the information for several different viruses, provided by _Cell Biology by the Numbers_, and then computed the volume and bits for each virus. This data is presented in the simple graph below.
 
-A could be represented as 00, T as 01, G as 10, and C as 11, for example. Thus, each base stores _two bits_ of information.
+Hover over a point to see additional information.
 
-Let's now compute the "bits" of each virus, simply by multiplying the genome sizes by two.
 
 Now, how many viruses do we need to store the entire Library of Congress? I have seen blog posts, from the [Library of Congress](https://blogs.loc.gov/thesignal/2011/07/transferring-libraries-of-congress-of-data/), no less, that repute the strangely circulated claim that the LoC holds a mere 10TB of data. In reality, the LoC holds something like 25 million books. Each book, when scanned, contains about 8Mb of data. Thus, there are roughly 200 million Mb of data in the Library of Congress, or about _200 terabytes_. 200 TB is 2e+11 kilobytes of data.
 

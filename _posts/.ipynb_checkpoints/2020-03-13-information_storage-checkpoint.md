@@ -12,7 +12,7 @@ mathjax: true
 
 The coronavirus outbreak has been a trying time. I'm obviously not an epidemiologist, or a virologist, or any other profession that might be considered useful during the weeks to come. I don't have advice to offer, or words of wisdom to follow. In an ongoing class at Caltech, called _Physical Biology of the Cell_, we were asked to consider the information storage capacity of different viruses -- a topic that I've decided to expand upon here. 
 
-The question that I am asking is: "What is the information storage capacity, in terms of bits / volume, of different viruses? How does this compare to traditional storage mediums, e.g. CDs and hard drives?"
+The question that I am asking is: **"What is the information storage capacity, in terms of bits / volume, of different viruses? How does this compare to traditional storage mediums, e.g. CDs and hard drives?"**
 
 Fortunately, tackling this problem is not too difficult, because much of the data on viral genome sizes and dimensions is already known. In answering this question, I relied heavily upon the book _Cell Biology by the Numbers_, especially a section called ["How Big are Viruses?"](http://book.bionumbers.org/how-big-are-viruses/). This dataset provides the capsid architecture (icosahedral, roughly spherical, etc.) for different viruses, along with their genome size and genome type (single-stranded RNA, double-stranded DNA, etc.). We can use the given diameters to calculate the size of the "heads" on these viruses. In this problem, I will approximate _all_ of the viruses as roughly spherical, thus using the formula for the volume of a sphere,
 
@@ -33,6 +33,13 @@ I used a Pandas DataFrame to store the information for several different viruses
 
 Hover over a point to see additional information.
 
+{% include 2020_03_05_viral_storage_capacity.html %}
+
+This data, in itself, is not super interesting. Some of the viruses have a higher storage capacity by volume (any points closest to the upper left corner of the graph). The more interesting question, really, is:
+
+**What volume of viruses would be required to store all 25 million books in the Library of Congress?**
+
+Obviously, a major limitation with DNA storage is not in how information is stored (DNA is super stable) but, rather, in how the data is retrieved.
 
 Now, how many viruses do we need to store the entire Library of Congress? I have seen blog posts, from the [Library of Congress](https://blogs.loc.gov/thesignal/2011/07/transferring-libraries-of-congress-of-data/), no less, that repute the strangely circulated claim that the LoC holds a mere 10TB of data. In reality, the LoC holds something like 25 million books. Each book, when scanned, contains about 8Mb of data. Thus, there are roughly 200 million Mb of data in the Library of Congress, or about _200 terabytes_. 200 TB is 2e+11 kilobytes of data.
 
@@ -44,7 +51,6 @@ The [Stanford study](https://news.stanford.edu/news/2009/january28/small-012809.
 
 To compute the areal density of DNA from the Columbia study, I simply converted their reported value of "215 petabytes per gram of DNA" into "215 petabytes per X bases of DNA" by using the molar mass of a typical DNA base pair. To compute the area of these DNA bases, I used base pair dimension values from [BioNumbers](https://bionumbers.hms.harvard.edu/bionumber.aspx?&id=103777). I obtained a final calculated areal density of $1.85 \times 10^{12}$ $\frac{bits}{in^{2}}$
 
-{% include 2020_03_05_viral_storage_capacity.html %}
 
 
 {% include 2020_03_05_virus_library.html %}

@@ -9,26 +9,11 @@ sect: home
 mathjax: true
 
 ---
-{% highlight python linenos %}
+{% highlight python %}
     def some(code):
         x = 21
         y = []
 {% endhighlight %}
-
-{% highlight html linenos %}
-
-	x = 4
-
-{% endhighlight %}
-
-<pre>
-  <code class="python">
-    x = 4
-    y = 3
-    def function():
-        function here.
-  </code>
-</pre>
 
 The coronavirus outbreak has been a trying time. I'm obviously not an epidemiologist, or a virologist, or any other profession that might be considered useful during the weeks to come. I don't have advice to offer, or words of wisdom to follow. In an ongoing class at Caltech, called _Physical Biology of the Cell_, we were asked to consider the information storage capacity of different viruses -- a topic that I've decided to expand upon here. 
 

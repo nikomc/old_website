@@ -5,10 +5,30 @@ author: "Niko McCarty"
 categories: blog
 tags: [blog,coronavirus,covid-19,virus,viruses,information,storage,density,data]
 image: covid-19.jpg
-# sect: home
+sect: home
 mathjax: true
 
 ---
+{% highlight python linenos %}
+    def some(code):
+        x = 21
+        y = []
+{% endhighlight %}
+
+{% highlight html linenos %}
+
+	x = 4
+
+{% endhighlight %}
+
+<pre>
+  <code class="python">
+    x = 4
+    y = 3
+    def function():
+        function here.
+  </code>
+</pre>
 
 The coronavirus outbreak has been a trying time. I'm obviously not an epidemiologist, or a virologist, or any other profession that might be considered useful during the weeks to come. I don't have advice to offer, or words of wisdom to follow. In an ongoing class at Caltech, called _Physical Biology of the Cell_, we were asked to consider the information storage capacity of different viruses -- a topic that I've decided to expand upon here. 
 
@@ -29,9 +49,7 @@ To calculate "bits per volume", we also need to know how much information each v
 ![DNA Structure](../assets/img/DNA_structure.png){:class="img-responsive"}
 _DNA is a polymer consisting of four different molecules (or bases): adenine, thymine, cytosine and guanine. These four molecules link and bind to one another, and each base can encode two bits of information. [Image by Madeleine Price Ball](https://commons.wikimedia.org/wiki/File:DNA_chemical_structure.svg)_
 
-I used a Pandas DataFrame to store the information for several different viruses, provided by _Cell Biology by the Numbers_, and then computed the volume and bits for each virus. This data is presented in the simple graph below.
-
-Hover over a point to see additional information.
+I used Python to analyze each virus and compute their volumes and kilobytes. There are 8000 bits in a kilobyte. This data is presented in the simple graph below. Hover over a point to see additional information.
 
 {% include 2020_03_05_viral_storage_capacity.html %}
 

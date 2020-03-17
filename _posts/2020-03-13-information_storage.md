@@ -10,7 +10,13 @@ mathjax: true
 
 ---
 
-_In light_ of the coronavirus outbreak, but in an attempt to sway coverage slightly off-topic, I wanted to explore "DNA as a storage medium".
+The coronavirus outbreak has been a trying time. I'm obviously not an epidemiologist, or a virologist, or any other profession that might be considered useful during the weeks to come. I don't have advice to offer, or words of wisdom to follow. In an ongoing class at Caltech, called _Physical Biology of the Cell_, we were asked to consider the information storage capacity of different viruses -- a topic that I've decided to expand upon here. 
+
+The question that I am asking is: "What is the information storage capacity, in terms of bits / volume, of different viruses? How does this compare to traditional storage mediums, e.g. CDs and hard drives?"
+
+Fortunately, tackling this problem is not too difficult, because much of the data on viral genome sizes and dimensions is already known. In answering this question, I relied heavily upon the book _Cell Biology by the Numbers_, especially a section called ["How Big are Viruses?"](http://book.bionumbers.org/how-big-are-viruses/). This dataset provides the capsid architecture (icosahedral, roughly spherical, etc.) for different viruses, along with their genome size and genome type (single-stranded RNA, double-stranded DNA, etc.). We can use the given diameters to calculate the size of the "heads" on these viruses. In this problem, I will approximate _all_ of the viruses as roughly spherical, thus using the formula for the volume of a sphere,
+
+$V_{sphere} = \frac{4}{3} \pi r^3$
 
 In a class at Caltech, taught by Professor Rob Phillips (BE/APh 161, Physical Biology of the Cell, for those curious readers), we were asked to think about the viral storage capacity. In other words, how much information, in bits, can different viruses store in their capsids? How does this value, of bits/$\mu m^3$, compare to, say, the bits/$\mu m^3$ value of a modern 4TB hard drive?
 

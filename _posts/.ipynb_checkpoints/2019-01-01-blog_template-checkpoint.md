@@ -3,7 +3,7 @@ layout: post
 title: "Test Blog"
 author: "Niko McCarty"
 # categories: blog
-tags: [blog,sample]
+tags: [sample]
 image: cuba-4.jpg
 # sect: home
 display_img: false

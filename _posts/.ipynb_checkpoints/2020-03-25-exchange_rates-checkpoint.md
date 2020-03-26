@@ -9,9 +9,9 @@ sect: home
 mathjax: true
 
 ---
-Explanation of data. Explain my practice of Python and cleaning data in particular. 
+During the coronavirus pandemic, I am making a concerted effort to improve my data science and visualization skills. I'm practicing tidying data with Pandas, am exploring Python-based data visualization tools (like Altair and PyViz) and, in the next week or so, will begin practicing D3.js in earnest.
 
-{% include 2020_03_25_exchange_rates.html %}
+The figure below is a simple exchange rate viewer. Select a country from the dropdown box, and the graph will automatically update to display its exchange rate (USD --> country currency).
 
 {% include 2020_03_25_exchange_rates_dropdown.html %}
 

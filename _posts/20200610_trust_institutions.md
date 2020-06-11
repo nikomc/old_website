@@ -4,7 +4,7 @@ title: "Trust in American Institutions"
 author: "Niko McCarty"
 categories: blog
 tags: [blog,dataviz,d3]
-image:
+image: column_interior.jpg
 sect: home
 mathjax: true
 ---

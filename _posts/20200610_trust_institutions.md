@@ -7,11 +7,9 @@ tags: [blog,dataviz,d3]
 image: column_interior.jpg
 sect: home
 mathjax: true
+
 ---
-
-{% include 20200610_trust_institutions.html %}
-
-Sample text here.
+Sample text here. And more text.
 
 ____________________________________________________________
 

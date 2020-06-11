@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "How Many Viruses to Store the Library of Congress?"
+title: "Partisan Trust in American Institutions"
 author: "Niko McCarty"
 categories: blog
-tags: [blog,coronavirus,covid-19,virus,viruses,information,storage,density,data]
-image: covid-19.jpg
+tags: [blog,trust,pew,d3,data,dataviz]
+image: column_interior.jpg
 sect: home
 mathjax: true
 

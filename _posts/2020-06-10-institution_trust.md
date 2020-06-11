@@ -16,7 +16,7 @@ The code is also _directly_ adapted from code written by [bl.ocks user Thanaporn
 
 Check out the code and visualization below:
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="Trust in Institutions - D3.js" src="https://codepen.io/nsmccarty/embed/BajjbXG?height=404&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="404" style="width: 100%;" scrolling="no" title="Trust in Institutions - D3.js" src="https://codepen.io/nsmccarty/embed/BajjbXG?height=404&theme-id=dark&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/nsmccarty/pen/BajjbXG'>Trust in Institutions - D3.js</a> by Niko McCarty
   (<a href='https://codepen.io/nsmccarty'>@nsmccarty</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>

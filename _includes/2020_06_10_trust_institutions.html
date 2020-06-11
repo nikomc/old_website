@@ -1,51 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Trust in Institutions, According to Political Party</title>
-  <style>
-    body {
-      font-family: sans-serif;
-    }
+<div id="chart">
+  <input type="range" min="1" max="12" value="8">
+  <output name="chart"></output>
+</div>
+<style>
+    
+#chart {
+  position: auto;
+  top: 20px;
+  left: 20px;
+}
 
-    text {
-      font-size: 20px;
-    }
+#chart input {
+  position: auto;
+  width: 300px;
+}
+    
+body {
+    font-family: sans-serif;
+}
 
-    text.x-title {
-      font-weight: bold;
-    }
+text {
+    font-size: 20px;
+}
 
-    .grid-line {
-      stroke: black;
-      opacity: 0.2;
-    }
+text.x-title {
+    font-weight: bold;
+}
 
-    .lollipop-line {
-          stroke: black;
-          stroke-width: 1px;
-        }
+.grid-line {
+    stroke: black;
+    opacity: 0.2;
+}
 
-    circle {
-      stroke-width: 1px;
-      stroke: black;
-    }
+.lollipop-line {
+    stroke: black;
+    stroke-width: 1px;
+}
 
-    circle.lollipop-rep {
-      fill: #fc4e2a;
-    }
+circle {
+    stroke-width: 1px;
+    stroke: black;
+}
 
-    .lollipop-dem {
-      fill: #1d91c0;
-    }
+circle.lollipop-rep {
+    fill: #fc4e2a;
+}
 
-  </style>
-</head>
+.lollipop-dem {
+    fill: #1d91c0;
+}
 
-<body>
-  <div id="chart"></div>
-  <script src="https://d3js.org/d3.v5.js"></script>
-  <script>
+</style>
+
+<script src="https://d3js.org/d3.v5.js"></script>
+
+<script>
     // Code adapted from bl.ocks.org, https://bl.ocks.org/Thanaporn-sk/210d359e6e0c10898ff1329a88ed20c6
     
     // Data is taken from https://www.people-press.org/2020/04/09/public-holds-broadly-favorable-views-of-many-federal-agencies-including-cdc-and-hhs/
@@ -248,6 +257,4 @@
     function hideLabel(d) {
       d3.select(this.parentNode).select("text").remove();
     }
-  </script>
-</body>
-</html>
+</script>

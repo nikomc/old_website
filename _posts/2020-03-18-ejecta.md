@@ -2,10 +2,10 @@
 layout: post
 title: "How Big is a Sneeze?"
 author: "Niko McCarty"
-categories: blog
-tags: [blog,coronavirus,covid-19,virus,viruses,information,storage,density,data]
-image: covid-19.jpg
-sect: home
+# categories: blog
+# tags: [blog,coronavirus,covid-19,virus,viruses,information,storage,density,data]
+# image: covid-19.jpg
+# sect: home
 mathjax: true
 
 ---
